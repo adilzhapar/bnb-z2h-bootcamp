@@ -31,7 +31,7 @@
     **https://bscscan.com/gastracker**<br/>
     **5 GWEI**
 ***
-7. https://bscscan.com/gastracker?
+7. What is special about this transaction?
 
         0x1bfbff8411ed44e609d911476b0d35a28284545b690902806ea0a7ff0453e931
     **[Contract 0x10ed43c718714eb63d5aa57b78b54704e256024eCreated] (PancakeSwap: Router v2)** 
