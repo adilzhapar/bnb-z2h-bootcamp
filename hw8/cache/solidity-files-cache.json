@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\adilz\\Documents\\bnb_z2h\\bnb-z2h-bootcamp\\hw8\\contracts\\BadgerCoin.sol": {
+      "lastModificationDate": 1678995901193,
+      "contentHash": "cda2e5b46750e3fb96af00f225491e61",
+      "sourceName": "contracts/BadgerCoin.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "BadgerCoin"
+      ]
+    }
+  }
+}
