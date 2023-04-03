@@ -1,13 +1,10 @@
-# Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+# address of deployed contract:
 
-Try running some of the following tasks:
+0xeDB84b0809c7cFdF1DC7Ed806385B42A098F5DE1
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+# Hash of minted nft:
+
+0xba86f3e737020a701686a0ec2f77ba30f2b39da13fb81e3148b0d85a6652003d
+
+
