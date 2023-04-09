@@ -1,0 +1,197 @@
+{
+  "version": "3.4",
+  "log": [
+    {
+      "contracts/UpgradeMe.sol:UpgradeMe": {
+        "src": "contracts/UpgradeMe.sol:4",
+        "version": {
+          "withMetadata": "a931a6053fe0166a4b76130aa831346c0fc2e4ecb814e43aec877ba721b9a069",
+          "withoutMetadata": "484bd74bf2c792491758fba8a9bd6a21fbe73edb2b85dfdd75be0ac10a3421c5",
+          "linkedWithoutMetadata": "484bd74bf2c792491758fba8a9bd6a21fbe73edb2b85dfdd75be0ac10a3421c5"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "processPayment(uint8,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "UpgradeMe",
+            "src": "contracts/UpgradeMe.sol:17"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "nextPayout",
+            "src": "contracts/UpgradeMe.sol:13"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "owner",
+            "src": "contracts/UpgradeMe.sol:15"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "options",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_enum(PaymentOptions)6",
+              "contract": "UpgradeMe",
+              "src": "contracts/UpgradeMe.sol:8"
+            },
+            {
+              "label": "balance",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "UpgradeMe",
+              "src": "contracts/UpgradeMe.sol:11"
+            },
+            {
+              "label": "initialBlock",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "UpgradeMe",
+              "src": "contracts/UpgradeMe.sol:12"
+            },
+            {
+              "label": "nextPayout",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "UpgradeMe",
+              "src": "contracts/UpgradeMe.sol:13"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_enum(PaymentOptions)6": {
+              "label": "enum UpgradeMe.PaymentOptions",
+              "members": [
+                "Pay",
+                "Borrow",
+                "Defer",
+                "Extra"
+              ],
+              "numberOfBytes": "1"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.18"
+      },
+      "contracts/Upgraded.sol:Upgraded": {
+        "src": "contracts/Upgraded.sol:4",
+        "version": {
+          "withMetadata": "735337853a4848008204691b552f6848b2c0ec6c264b59d5db46ee4b173188b5",
+          "withoutMetadata": "13566b1fde0d8a8bc9583301f6d4fa23cba38a00aefb898fe6aa4429c690838f",
+          "linkedWithoutMetadata": "13566b1fde0d8a8bc9583301f6d4fa23cba38a00aefb898fe6aa4429c690838f"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "processPayment(uint8,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Upgraded",
+            "src": "contracts/Upgraded.sol:17"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "nextPayout",
+            "src": "contracts/Upgraded.sol:13"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "owner",
+            "src": "contracts/Upgraded.sol:15"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "options",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_enum(PaymentOptions)126",
+              "contract": "Upgraded",
+              "src": "contracts/Upgraded.sol:8"
+            },
+            {
+              "label": "balance",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "Upgraded",
+              "src": "contracts/Upgraded.sol:11"
+            },
+            {
+              "label": "initialBlock",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "Upgraded",
+              "src": "contracts/Upgraded.sol:12"
+            },
+            {
+              "label": "nextPayout",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "Upgraded",
+              "src": "contracts/Upgraded.sol:13"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_enum(PaymentOptions)126": {
+              "label": "enum Upgraded.PaymentOptions",
+              "members": [
+                "Pay",
+                "Borrow",
+                "Defer",
+                "Extra"
+              ],
+              "numberOfBytes": "1"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.18"
+      }
+    }
+  ]
+}

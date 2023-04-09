@@ -1,0 +1,77 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/adil/Documents/bnb-z2h-bootcamp/hw17/contracts/UpgradeMe.sol": {
+      "lastModificationDate": 1680970129244,
+      "contentHash": "4dbf9f8255328927ad8c40b6d5fdac70",
+      "sourceName": "contracts/UpgradeMe.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "UpgradeMe"
+      ]
+    },
+    "/home/adil/Documents/bnb-z2h-bootcamp/hw17/contracts/Upgraded.sol": {
+      "lastModificationDate": 1680971066779,
+      "contentHash": "a1ad49fd4a13d4cbecbee192f66a0aea",
+      "sourceName": "contracts/Upgraded.sol",
+      "solcConfig": {
+        "version": "0.8.18",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "Upgraded"
+      ]
+    }
+  }
+}
