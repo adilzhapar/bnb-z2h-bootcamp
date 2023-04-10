@@ -1,13 +1,20 @@
-const { Contract } = require("hardhat/internal/hardhat-network/stack-traces/model");
+const { ethers, upgrades } = require("hardhat");
 
-require("@nomiclabs/hardhat-web3");
-require("dotenv").config({path: "./.env"});
+const contract_address = "0x10ED43C718714eb63d5aA57B78B54704E256024E";
 
-let abi = require('../utils/Pancake.json');
+async function main() {
+   const gas = await ethers.provider.getGasPrice()
+   const V2Contract = await ethers.getContractFactory("Upgraded");
+   console.log("Upgrading V1Contract...");
+   let upgrade = await upgrades.upgradeProxy(UPGRADEABLE_PROXY, V2Contract, {
+      gasPrice: gas
+   });
+   
+   console.log("V1 Upgraded to V2");
+   console.log("V2 Contract Deployed To:", upgrade.address)
+}
 
-
-Contract.setProvider('http://localhost:8545/');
-
-let contract = new Contract(abi, process.env.CONTRACT_ADDRESS);
-
-contract.methods.factory().call().then(console.log);
+main().catch((error) => {
+   console.error(error);
+   process.exitCode = 1;
+ });
